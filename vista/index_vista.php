@@ -49,7 +49,7 @@
                   <th scope="col"></th>
                   <th scope="col">Hoy</th>
                   <?php for ($e = 1;  $e < 7; $e++ ) {?>
-                    <th scope="col"><?php echo utf8_encode(strftime("%A",strtotime("+".$e." days -1 hours"))); ?></th>
+                    <th scope="col"><?= strftime("%A",strtotime("+".$e." days -1 hours")); ?></th>
                   <?php } ?>
                 </tr>
               </thead>
