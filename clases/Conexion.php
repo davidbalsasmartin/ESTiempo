@@ -4,9 +4,6 @@
    private $miDb = 'mysql:host=localhost;dbname=tiempo;charset=UTF8;';
    private $dbUser = "root" ;
    private $dbPass = "" ;
-   /*private $miDb = 'mysql:host=sql309.epizy.com:3306;dbname=epiz_23052575_tiempo;charset=UTF8;';
-   private $dbUser = "epiz_23052575" ;
-   private $dbPass = "OaYBjiv2sPEV" ;*/
    //
    private static $instancia;
    private static $db;
