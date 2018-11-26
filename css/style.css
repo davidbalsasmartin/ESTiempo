@@ -1,0 +1,485 @@
+  .imagen-reg {
+      float: left;
+      width: 620px;
+      border-radius: .25rem;
+      height: 445px;
+      margin-left: 100px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+      background-image: url(../img/mallorca.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+  .imagen-log {
+      float: left;
+      width: 620px;
+      height: 280px;
+      border-radius: .25rem;
+      margin-left: 100px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+      background-image: url(../img/besalu.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .imagen-aneven {
+      float: left;
+      width: 620px;
+      height: 460px;
+      border-radius: .25rem;
+      margin-left: 100px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+      background-image: url(../img/feria.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .arregloReg {
+      width: 22rem;
+    }
+
+    .zoom1 {
+      zoom: 95%;
+    }
+
+    .md-form .prefix.active {
+      color: #00bcd4!important; }
+
+    .md-form input[type=text]:focus:not([readonly]),
+    .md-form input[type=password]:focus:not([readonly]),
+    .md-form input[type=date]:focus:not([readonly]),
+    .md-form input[type=email]:focus:not([readonly]){
+      box-shadow: 0 1px 0 0 #00bcd4!important;
+      border-bottom: 1px solid #00bcd4!important; }
+
+    .md-form input[type=text]:focus:not([readonly]) + label,
+    .md-form input[type=date]:focus:not([readonly]) + label,
+    .md-form input[type=password]:focus:not([readonly]) + label,
+    .md-form input[type=email]:focus:not([readonly]) + label{
+      color: #00bcd4!important;
+    }
+
+    @media only screen and (max-width: 1212px) and (min-width: 1101px){
+      .imagen-log {
+        margin-left: 40px;
+        width: 500px;
+        height: 270px;
+      }
+
+      .imagen-reg {
+        width: 500px;
+        height: 380px;
+        margin-left: 40px;
+      }
+
+      .arregloReg{
+        position: relative;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        width: 44%;
+        margin-left: 2%;
+    }
+  }
+
+    @media only screen and (max-width: 1100px){
+      .imagen-log {
+        display: none;
+      }
+      .imagen-reg {
+        display: none;
+      }
+
+      .arregloReg{
+        position: relative;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        width: 44%;
+        margin-left: 2%;
+      }
+
+      .but {
+        margin-left: 6%;
+      }
+
+      .mitad {
+        margin: auto!important;
+      }
+    }
+
+  .ciudades {
+    position: fixed;
+    width: 12%;
+    right: 3%;
+    bottom: 3%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    background-color: rgb(248, 249, 250,0.8);
+    border-radius: .25rem;
+  }
+
+  .ciuAct {
+    margin-top: 3%;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+
+  .ciuActU {
+    border-bottom: 0px!important;
+  }
+
+  .titCiudad {
+    color: #28616f;
+    font-size: 24px;
+  }
+
+  .forecast {
+    margin-left: -65px;
+    width: 86%;
+    height: auto;
+    display: inline-block;
+    margin-top: 98px;
+  }
+
+  .cajaEventos {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    right: -12%;
+  }
+
+    .centrarFore {
+      position: relative;
+    }
+
+    .carousel-control-next {
+      bottom: 33%!important;
+  }
+
+  .carousel-control-prev {
+      bottom: 33%!important;
+  }
+
+  .transp {
+    background-color: rgb(248, 249, 250,0.8)!important;
+  }
+
+  .linea {
+    border-top: 1px solid #fff;
+  }
+
+  .miAzul {
+    color: #00bcd4!important;
+  }
+
+  .fechaCarr {
+    font-size: 10px;
+    text-align: center;
+    margin-top: -12px;
+  }
+
+  .textoCentrado{
+    text-align: center!important;
+  }
+
+  .centraF {
+    background-image: url('../img/mallorca.jpg');
+    width: 200px;
+    height: 100px;
+  }
+
+  .custom-select:focus {
+    border-color: #00bcd4!important;
+  }
+
+  .custom-select:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.5)!important;
+  }
+  .centrar {
+        margin: auto;
+    }
+
+    .myselect1, .myselect2, .myselect3 {
+        position:relative;
+        height:30px;
+        width:100px;
+        margin-bottom: 26px;
+        margin-top: 20px;
+    }
+
+    .myselect23 {
+        position:relative;
+        height:30px;
+        width:100px;
+    }
+
+    .myselect23 select {
+        position:absolute;
+        z-index: 2;
+    }
+
+    .myselect4 {
+        position:relative;
+        height:33px;
+        width:100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .myselect1 select {
+        position:absolute;
+        z-index: 6;
+    }
+    .myselect2 select {
+        position:absolute;
+        z-index: 5;
+    }
+    .myselect3 select {
+        position:absolute;
+        z-index: 4;
+    }
+    .myselect4 select {
+        position:absolute;
+        z-index: 3;
+    }
+
+    .segundoCB {
+      margin-left: 45px;
+    }
+    .contieneBloque {
+      display: inline-block;
+    }
+
+    .bodyIndex {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      top: 0;
+      z-index: -1;
+    }
+
+    .enMedio {
+        margin: auto!important;
+    }
+
+    .modViajes {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .letra_fecha {
+      margin-top: -37px;
+      margin-left: 318px;
+      position: absolute;
+      color: #757575;
+    }
+
+    .arreg {
+          padding-right: 2px!important;
+              width: 410px;
+    }
+
+    .segunda{
+      margin-left: 306px;
+    }
+
+    .error {
+      right: 24px;
+      top: 26px;
+      font-size: 14px;
+      color: red;
+      position: absolute;
+      animation: desaparece 4s ease 0s normal forwards 1;
+    }
+
+    .verde {
+      color: green!important;
+    }
+
+    @keyframes desaparece {
+      0% { opacity:1; }
+      66% { opacity:1; }
+      100% { opacity:0; }
+    }
+
+    .codigoError {
+      font-family: 'Merriweather Sans', sans-serif;
+      margin-left: 37%;
+      margin-top: 6%;
+      font-size: 22px;
+      color: #ca0000;
+    }
+
+    .img_error {
+      margin-left: 42%;
+    }
+
+    .butoncito {
+      margin-left: 480px;
+    }
+
+    .forecast th:first-letter {
+      text-transform: uppercase;
+    }    
+
+    .letraPeque {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .forecast table {
+      text-align: center;
+    }
+
+    .forecast table.table td {
+      min-width: 112px;
+    }
+    #contenedorMapa {
+      position: relative;
+      margin: auto;
+      width: 812px;
+      height: 602px;
+      margin-top: 22px;
+      background-image: url(../dibujos/_grid.gif);
+    }
+    
+    .efecto {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .oculto {
+      visibility: hidden;
+    }
+
+
+    .actualidad {
+      margin-left: -65px;
+      display: inline-block;
+      position: absolute;
+      overflow: hidden;
+      width: 951px;
+    }
+
+    .actualidad th:first-letter {
+      text-transform: uppercase;
+    }    
+
+    .actualidad table {
+      text-align: center;
+    }
+
+    .actualidad table.table td {
+      min-width: 112px;
+    }
+
+    .actualidad .card-body{
+      padding: 0; 
+      height: 65px;
+    }
+    .actualidad table.table td, .actualidad table.table th {
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+    }
+
+    .divideEven {
+      position: absolute;
+      width: 187px;
+      height: 65px;
+      text-align: center;
+    }
+
+    .divideEven ~ .dos {
+      left: 190px;
+    }
+
+    .divideEven ~ .tres {
+      left: 380px;
+    }
+
+    .divideEven ~ .cuatro {
+      left: 570px;
+    }
+
+    .divideEven ~ .cinco {
+      left: 760px;
+    }
+
+    .divideEven img {
+      height: 66%;
+      top: 0;
+      margin-top: -3px;
+    }
+
+    .divideEven .desUno, .divideEven .desDos, .divideEven .desTres, .divideEven .desCuatro {
+      font-size: .9rem;
+      font-weight: 300;
+  }
+
+    .bajar {
+      margin-top: 50px!important;
+    }
+
+    .modifica {
+      position: absolute;
+      font-weight: 300;
+      font-size: 15px;
+      color: #757575
+    }
+
+    .mod_ciudad1 {
+      top: 116px;
+    }
+
+    .mod_ciudad2 {
+      top: 173px;
+    }
+
+    .mod_ciudad3 {
+      top: 229px;
+    }
+
+    .Mabajo {
+      margin-top: 60px!important;
+    }
+
+    .Bajar {
+      margin-top: -2px!important;
+      margin-left: 90px;
+    }
+
+    .aniadirviaje {
+      position: absolute;
+      right: 28px;
+      top: bottom;
+      bottom: 21px;
+      background-color: #ce4e4e;
+    }
+
+    .cuentaDias {
+      position: absolute;
+      margin-left: 996px;
+      top: 248px;
+      text-align: center;
+      width: 248px;
+    }
+
+    .miVerde {
+      background-color: rgba(72, 138, 73, 0.9)!important;
+    }
+
+    .miNaranja {
+     background-color: rgba(255, 218, 154, 0.75)!important;
+    }
+
+    .ses {
+      margin-top: 10px;
+    }
