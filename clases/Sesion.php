@@ -54,18 +54,10 @@
 					$sql4 = $db->prepare($query4);
 					$sql4->bindParam(':usuario',$user, PDO::PARAM_STR);
     				$sql4->execute();
-					$result4 = $sql4->fetch(PDO::FETCH_ASSOC);
-					//si es así, debemos guardarlo
-					// A partir de aquí, en una base de datos con permisos admin uso un evento en mysql, pero en el remoto uso esto:
-    				// (Es para borrar los viajes 'caducados')
+				$result4 = $sql4->fetch(PDO::FETCH_ASSOC);
+				
     				if ($sql4->rowCount()) {
-    					if ($result4['fecha_fin'] < date('Y-m-d')) {
-							$query5= "DELETE FROM viaje WHERE fecha_fin < NOW()" ;
-							$sql5 = $db->prepare($query5);
-    						$sql5->execute();
-    					} else {
     						$_SESSION["viaje"] = [ "ciudad" => $result4['ciudad'], "fecha_ini" => $result4['fecha_ini'], "fecha_fin" =>  $result4['fecha_fin']];
-    					}
     				}
 
 					//recorremos las ciudades, y las guardamos en session como el resto de datos
