@@ -10,7 +10,7 @@ Realizada por David Balsas Martín para proyecto de Desarrollo Web en Entorno Se
 
 Tiene una interfaz muy amigable.
 
-[Enlace para ver resultado online](https://estiempo.000webhostapp.com/)
+[Ver resultado online](https://estiempo.000webhostapp.com/)
 
 ### ¿Qué se ha utilizado? 📋
 
