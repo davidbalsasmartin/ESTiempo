@@ -27,7 +27,7 @@ Tiene una interfaz muy amigable.
 <img src="imagenes/tres.png" width="420">
 
 ### Buscar una ciudad en localhost
-<img src="imagenes/captura2.png" width="420">
+<img src="imagenes/cuatro.png" width="420">
 
 ### Buscar ciudad en servidor remoto
 <img src="imagenes/uno.png" width="420">
