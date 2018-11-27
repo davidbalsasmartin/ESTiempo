@@ -47,28 +47,10 @@
 		$sql7->bindParam(':ciudad', $miBusqueda, PDO::PARAM_STR);
     	$sql7->execute();
     	$result7 = $sql7->fetchAll(PDO::FETCH_ASSOC);
-    	// A partir de aquí, en una base de datos con permisos admin uso un evento en mysql, pero en el remoto uso esto:
-    	// (Es para actualizar los eventos de forma manuañ, que no haya ninguno 'caducado')
-    	if ($sql7->rowCount()) {
-    		foreach ($result7 as $row) {
-    			if ($row['fecha_fin'] < date('Y-m-d')) {
-    				$elEven = true;
-    			}
-    		}
-    		if (isset($elEven)) {
-				$query8= "DELETE FROM evento WHERE fecha_fin < NOW()" ;
-				$sql8 = $db->prepare($query8);
-    			$sql8->execute();
 
-    			$sql9 = $db->prepare($query7);
-				$sql9->bindParam(':ciudad', $miBusqueda, PDO::PARAM_STR);
-    			$sql9->execute();
-    			$result9 = $sql9->fetchAll(PDO::FETCH_ASSOC);
-    			$eventos = $result9;
-    		} else {
+    	if ($sql7->rowCount()) {
     			$eventos = $result7;
     		}
-    	}
  	}
  	
 	 //indicamos el español para el día de la semana
