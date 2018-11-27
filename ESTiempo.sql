@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 26-11-2018 a las 22:17:38
+-- Tiempo de generación: 26-11-2018 a las 00:15:33
 -- Versión del servidor: 10.1.30-MariaDB
 -- Versión de PHP: 7.2.1
 
@@ -124,7 +124,7 @@ CREATE TABLE `evento` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `evento`
+-- Volcado de datos aleatorios para la tabla `evento`
 --
 
 INSERT INTO `evento` (`nombre`, `lugar`, `fecha_inicio`, `fecha_fin`, `validado`, `foto`, `usuario`) VALUES
@@ -142,10 +142,12 @@ INSERT INTO `evento` (`nombre`, `lugar`, `fecha_inicio`, `fecha_fin`, `validado`
 ('Feria', 'Córdoba', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
 ('Feria', 'Málaga', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
 ('Feria', 'Mallorca', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
-('feria de alava', 'Álava', '2018-11-28', '2018-11-30', 'si', '2018-11-26-09-18-14feria.jpg', 'root'),
-('Feria de Alicante', 'Alicante', '2019-03-07', '2019-03-16', 'si', '2018-11-26-09-19-54feria.jpg', 'root'),
+('feriamaniana', 'Burgos', '2018-11-26', '2018-11-26', 'no', '', ''),
+('feriamaniana', 'Cantabria', '2018-11-26', '2018-11-26', 'no', '', ''),
+('feriamaniana', 'Córdoba', '2018-11-26', '2018-11-26', 'no', '', ''),
 ('Fiesta Álora', 'Cádiz', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
 ('Fiesta Álora', 'Málaga', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
+('Fiesta popular', 'Málaga', '2018-12-12', '2018-12-16', 'si', '2018-11-25-10-03-06gente.jpg', 'root'),
 ('Fiesta primavera', 'Cádiz', '2018-02-20', '2019-03-28', 'no', 'Plaza.jpg', 'juanita5'),
 ('Fiesta primavera', 'Ceuta', '2018-02-10', '2019-03-18', 'no', 'gente.jpg', 'juanita5'),
 ('Fiesta primavera', 'Cuenca', '2018-02-20', '2019-03-28', 'no', 'Plaza.jpg', 'pepito1'),
@@ -154,8 +156,6 @@ INSERT INTO `evento` (`nombre`, `lugar`, `fecha_inicio`, `fecha_fin`, `validado`
 ('Fiesta prueblo', 'Gran Canaria', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'pepito1'),
 ('Fiesta Pueblo', 'Jaén', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
 ('Fiesta Pueblo', 'La Coruña', '2019-07-20', '2019-07-28', 'no', 'feria.jpg', 'juanita5'),
-('ioaubdasidbsa', 'Asturias', '2018-11-29', '2018-11-30', 'no', '2018-11-26-07-00-26800px-Puerto_de_Málaga_090308.jpg', 'dasda346'),
-('Playita', 'Sevilla', '2099-12-12', '2099-12-12', 'si', 'playita.jpg', 'root'),
 ('Uy Casi', 'Barcelona', '2019-04-29', '2019-05-01', 'si', '2018-11-25-10-04-44feria.jpg', 'root');
 
 -- --------------------------------------------------------
@@ -177,7 +177,6 @@ CREATE TABLE `tiempof` (
   `ciudad` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `usuario`
@@ -199,13 +198,12 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`usuario`, `correo`, `ciudad`, `contrasena`, `ciudad1`, `ciudad2`, `ciudad3`) VALUES
 ('dasda344', 'oijegovier@gmail.com', 'Asturias', '$2y$10$iS/aWGPuNeAoyxjrHReF8ujhddII5Ek.A2bIHze7qNI.Qe4IKbpEm', NULL, NULL, NULL),
-('dasda346', 'asdasdasd@gmail.com', 'Málaga', '$2y$10$A.2UrvqS2e1IqUQri2502uSAn8hK0CxbCfWMuQd6DoXNWK1dlnprG', 'Almería', 'Fuerteventura', 'Asturias'),
+('dasda345', 'iowuefoief@gmail.com', 'Mallorca', '$2y$10$5G.Y1cQlCuk5u/yhS9h29uGmaQXXzodrb9.y.CwjyGDcjetRAiWEG', NULL, NULL, NULL),
+('dasda346', 'asdasdasd@gmail.com', 'Málaga', '$2y$10$BuhorKgMk77rcuSNaJxgBeQRllE0wsoersikMOc1ObQyiIRlhHkrm', 'Almería', 'Barcelona', 'Asturias'),
 ('juanita5', 'oiwnvewfv@gmail.com', 'Guadalajara', '$2y$10$Xcw4JhLr2CaTvySDLmHVfODYauVMm.vUlw.onYO1XVZ8ms3lqWdDm', NULL, NULL, NULL),
-('JuliaCasas93', 'oiwneefoiwenf@gmail.com', 'La Palma', '$2y$10$0T4eNCUg2HmnTh2P69nkCOEn1udGjI4aAa6joVKmGDqP1gRAvmR3e', NULL, NULL, NULL),
-('oisncesmdfsddddddddd', 'omeropfmeropfm@oiwefewd.com', 'Alicante', '$2y$10$BLSOxfyEVVLvWncqre85jea7D37GX14eiPDN.li1ax0lENHDmLq/C', 'Cabrera', 'Gran Canaria', NULL),
+('oisncesmdfsddddddddd', 'omeropfmeropfm@oiwefewd.com', 'Alicante', '$2y$10$BLSOxfyEVVLvWncqre85jea7D37GX14eiPDN.li1ax0lENHDmLq/C', NULL, NULL, NULL),
 ('pepito1', 'afanfas@oisfjasd.com', 'Castellón', '$2y$10$7GJhd4RYIDIAark56OVqyu27wiQl9kWqic02GEc.BuUc9F9LHR1Bq', NULL, NULL, NULL),
-('pepito5', 'iowuefoief@gmail.com', 'Mallorca', '$2y$10$vfPo.tOrZ2SbUcfkSe5ghO585s7EGv4Ru5jGNwrtOjOhrnvjAeJ1K', NULL, NULL, NULL),
-('root', 'root@root.es', 'Málaga', '$2y$10$hhKBYIBNbub5bVDfzHU6DeZqaavu7L9VyxH0rJlNoNRDwKT/t3gm2', 'Álava', 'Albacete', 'Alicante'),
+('root', 'root@root.es', 'Málaga', '$2y$10$Z8XkT/61XWaTtU6S7UnYqOS308sfuRKfVACddZ8pYjoH6vnhrk.tK', 'Álava', 'Albacete', 'Alicante'),
 ('sacatantunquetun', 'asdoinevf@oiefw.com', 'Ciudad Real', '$2y$10$.FAb56X4Qa1HkDQ/H4L.b.sc6zKln5HKzdPjcIx3M5Uxd604PEO/W', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -226,8 +224,7 @@ CREATE TABLE `viaje` (
 --
 
 INSERT INTO `viaje` (`ciudad`, `fecha_ini`, `fecha_fin`, `usuario`) VALUES
-('Álava', '2018-11-28', '2018-12-04', 'JuliaCasas93'),
-('Alicante', '2018-11-28', '2018-11-30', 'dasda346'),
+('Albacete', '2018-11-26', '2018-11-26', 'dasda344'),
 ('La Palma', '2019-05-24', '2019-06-28', 'root');
 
 --
@@ -301,8 +298,8 @@ ALTER TABLE `usuario`
 -- Filtros para la tabla `viaje`
 --
 ALTER TABLE `viaje`
-  ADD CONSTRAINT `viaje_ibfk_1` FOREIGN KEY (`ciudad`) REFERENCES `ciudad` (`ciudad`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `viaje_ibfk_2` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`usuario`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `viaje_ibfk_1` FOREIGN KEY (`usuario`) REFERENCES `usuario` (`usuario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `viaje_ibfk_2` FOREIGN KEY (`ciudad`) REFERENCES `ciudad` (`ciudad`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 DELIMITER $$
 --
