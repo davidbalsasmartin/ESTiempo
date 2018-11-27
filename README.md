@@ -10,6 +10,8 @@ Realizada por David Balsas Martín para proyecto de Desarrollo Web en Entorno Se
 
 Tiene una interfaz muy amigable.
 
+[Enlace para ver resultado online](https://estiempo.000webhostapp.com/)
+
 ### ¿Qué se ha utilizado? 📋
 
 * *PHP*
@@ -20,4 +22,17 @@ Tiene una interfaz muy amigable.
 * *MDBootstrap*
 
 ## Alguna captura 📷
+
+### Index de usuario logueado en localhost
+<img src="imagenes/tres.png" width="420">
+
+### Buscar una ciudad en localhost
+<img src="imagenes/captura2.png" width="420">
+
+### Buscar ciudad en servidor remoto
+<img src="imagenes/uno.png" width="420">
+
+### Registrar usuario en servidor remoto
+<img src="imagenes/dos.png" width="420">
+
 
